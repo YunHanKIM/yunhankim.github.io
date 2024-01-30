@@ -215,49 +215,66 @@
       </section>
       <!-- Work -->
       <section id="work" class="section">
-        <h2 class="title">My work</h2>
-        <p class="description">Projects</p>
-        <ul>
-          <li>
-            <button>All<span>2</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <button>Front-end <span>1</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <button>Back-end <span>1</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <button>Mobile <span>0</span></button>
-          </li>
-        </ul>
-        <li>
-          <a href="#" target="_blank">
-            <img src="images/projects/project1.png" alt="쓰담 프로젝트" />
-            <div>
-              <h3>쓰담 프로젝트</h3>
-              <p>파이널 프로젝트 with React</p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <img
-              src="images/projects/project2.png"
-              alt="READY TO MEET 프로젝트"
-            />
-            <div>
-              <h3>레디투밋 프로젝트</h3>
-              <p>파이널 프로젝트 with Spring boot</p>
-            </div>
-          </a>
-        </li>
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected">
+                All <span class="category__count">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Front-end <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Back-end <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Mobile <span class="category__count">0</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project">
+              <a
+                href="https://github.com/YunHanKIM/-codestates_ABC-Lab_final"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="images/projects/project1.png"
+                  alt="쓰담 프로젝트"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">쓰담 프로젝트</h3>
+                  <p>파이널 프로젝트 with React</p>
+                </div>
+              </a>
+            </li>
+            <li class="project">
+              <a
+                href="https://shorthaired-floss-c53.notion.site/Developer-c7d4f42a898149fc93f3184cc51a8c4b?pvs=4"
+                target="_blank"
+              >
+                <img
+                  class="project__img"
+                  src="images/projects/project2.png"
+                  alt="READY TO MEET 프로젝트"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">레디투밋 프로젝트</h3>
+                  <p>파이널 프로젝트 with Spring boot</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Testimonials -->
       <section id="testimonials" class="section">
