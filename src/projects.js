@@ -9,11 +9,11 @@ categories.addEventListener('click', (event) => {
   if (filter == null) {
     return;
   }
-  handleActiveSelector(event.target);
+  handleActiveSelection(event.target);
   filterProjects(filter);
 });
 
-function handleActiveSelector(target) {
+function handleActiveSelection(target) {
   const active = document.querySelector('.category--selected');
   active.classList.remove('category--selected');
   target.classList.add('category--selected');
