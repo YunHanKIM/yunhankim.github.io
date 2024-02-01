@@ -1,4 +1,4 @@
-'use strick';
+'use strict';
 
 // Header에 페이지 아래로 스크롤시 다크 스타일링 적용
 const header = document.querySelector('.header');
@@ -11,7 +11,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Home 섹션을 아로 스크롤시 투명하게 처리함
+// Home 섹션을 아래로 스크롤시 투명하게 처리함
 const home = document.querySelector('.home__container');
 const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
@@ -19,12 +19,12 @@ document.addEventListener('scroll', () => {
 });
 
 // Arrow up버튼을 아래로 스크롤시 투명하게 처리함
-const arrowup = document.querySelector('.arrow-up');
+const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
-    arrowup.style.opacity = 1;
+    arrowUp.style.opacity = 1;
   } else {
-    arrowup.style.opacity = 0;
+    arrowUp.style.opacity = 0;
   }
 });
 
